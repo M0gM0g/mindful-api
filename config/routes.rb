@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :entries
+  resources :entries, except: %i[new edit]
   # RESTful routes
   resources :examples, except: %i[new edit]
   resources :users, only: %i[index show update]
@@ -11,4 +11,10 @@ Rails.application.routes.draw do
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
   patch '/change-password' => 'users#changepw'
+  # Entry routes
+  get '/entries' => 'entries#index'
+  get '/entries/:id' => 'entires#show'
+  post '/entries' => 'entries#create'
+  patch '/entries/:id' => 'entries#update'
+  delete '/entries/:id' => 'entries#destroy'
 end

@@ -4,12 +4,12 @@ curl "http://localhost:4741/entries" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
-  --header "Authorization: Token token=BAhJIiVlMTc0NzBkMzhmZWI0OWY2ZjE3ZjEyZDQ1NzE0N2ZiZQY6BkVG--c7429bbb593a82b18efe636738601bf192da0fe1" \
+  --header "Authorization: Token token=BAhJIiU1ODg4NDQ5MGIwM2VlYWU4MjcxMzNhOTBkYzE0MTYxZQY6BkVG--3a1bbadfd187c53de6271a13534de231e663185a" \
   --data '{
     "entry": {
-      "thought": "'"I'm no good at this. I'll never be a programmer"'",
+      "thought": "'"Im no good at this. Ill never be a programmer"'",
       "distortion": "'"Unrealistic "'",
-      "response": "'"I've only been coding for 5 weeks. I need time to grow! "'",
+      "response": "'"Ive only been coding for 5 weeks. I need time to grow! "'",
       "date": "'"2018-06-28"'"
     }
   }'
